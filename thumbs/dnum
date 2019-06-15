@@ -1,0 +1,5 @@
+for jpg in $*
+do 
+	cp $jpg $(echo $jpg | sed 's/tag_[0-9][0-9]_/tag_/g')
+done
+
